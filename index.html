@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A bilingual, local-first guide to Abha and Aseer.">
+  <title>Breathe Abha — Aseer at your pace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-atmosphere" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" data-i18n-aria-label="brandHome" aria-label="Breathe Abha home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M3 24 11 12l5 6 5-9 8 15M7 25h19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"/></svg></span>
+        <span id="brand-name">Breathe <em>Abha</em></span>
+      </a>
+      <nav class="main-nav" data-i18n-aria-label="primaryNavigation" aria-label="Primary navigation">
+        <a href="#home" data-route-link="home" data-i18n="navHome">Home</a>
+        <a href="#browse" data-route-link="browse" data-i18n="navExplore">Explore</a>
+        <a href="#planner" data-route-link="planner" data-i18n="navPlanner">Plan my day</a>
+        <a href="#map" data-route-link="map" data-i18n="navMap">Area guide</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4M15.5 12a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
+        </button>
+        <button class="language-button" id="language-toggle" type="button" aria-label="Switch to Arabic"><span aria-hidden="true">ع</span><span class="language-label">العربية</span></button>
+      </div>
+    </div>
+  </header>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+
+  <div class="app-error hidden" id="app-error" role="alert"></div>
+  <main id="main-content">
+    <p class="sr-only" id="route-announcement" aria-live="polite" aria-atomic="true"></p>
+    <div class="page-petal-transition" id="page-petal-transition" aria-hidden="true"></div>
+
+    <section class="intro-film" id="intro-film" role="dialog" aria-label="Breathe Abha opening film" data-i18n-aria-label="introDialogLabel" hidden>
+      <div class="intro-video-frame">
+        <video id="intro-video" playsinline preload="metadata" poster="assets/landing-jacaranda.jpg" aria-describedby="intro-status">
+          <source src="assets/aseer-intro.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="intro-entry">
+        <button class="intro-start-button" id="intro-start" type="button" aria-describedby="intro-status">
+          <span data-i18n="tapToEnter">Tap to enter</span>
+          <span class="intro-start-divider" aria-hidden="true">/</span>
+          <span lang="ar" dir="rtl" data-i18n="tapToEnterArabic">اضغط للدخول</span>
+        </button>
+      </div>
+      <div class="intro-controls" id="intro-controls" hidden aria-label="Opening film controls" data-i18n-aria-label="introControlsLabel">
+        <button class="intro-sound-button" id="intro-sound" type="button" aria-pressed="true" data-i18n-aria-label="muteSoundLabel" aria-label="Mute sound for the opening film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4m3.5-4.2a5 5 0 0 1 0 8.4m2.7-11a9 9 0 0 1 0 13.6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg><span data-intro-sound-label>Mute sound</span></button>
+        <button class="intro-skip-button" id="skip-intro" type="button" data-i18n="skipIntro">Skip intro</button>
+      </div>
+      <p class="sr-only" id="intro-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <section class="landing-view" id="home" aria-labelledby="home-title">
+      <img class="landing-image" src="assets/landing-jacaranda.jpg" alt="" aria-hidden="true">
+      <div class="landing-scrim" aria-hidden="true"></div>
+      <div class="petal-field" id="landing-petals" aria-hidden="true"></div>
+      <div class="shell landing-content">
+        <p class="landing-kicker" data-i18n="homeKicker">Aseer, breathed slowly</p>
+        <h1 id="home-title" tabindex="-1" data-i18n="homeTitle">Breathe in Abha.</h1>
+        <p data-i18n="homeCopy">Where mountain air, living heritage and generous welcomes turn every pause into a memory.</p>
+        <a class="button button-landing" href="#browse" data-i18n="exploreAction">Enter the guide</a>
+      </div>
+    </section>
+
+    <div id="guide-index" hidden>
+      <section class="category-hub-section section" id="browse" aria-labelledby="browse-title">
+        <div class="shell">
+          <div class="section-heading browse-heading">
+            <div><p class="eyebrow" data-i18n="browseKicker">Choose your pace</p><h2 id="browse-title" tabindex="-1" data-i18n="browseTitle">A side of Aseer for every mood.</h2></div>
+            <p data-i18n="browseCopy">Pick a category to open its considered places, Maps searches and planning actions.</p>
+          </div>
+          <div class="category-hub" id="category-hub"></div>
+        </div>
+      </section>
+
+      <section class="planner-section section" id="planner" aria-labelledby="planner-title">
+        <div class="shell planner-layout">
+          <div class="planner-copy">
+            <p class="eyebrow" data-i18n="plannerEyebrow">Plan your stay</p>
+            <h2 id="planner-title" tabindex="-1" data-i18n="plannerTitle">Build your Aseer itinerary.</h2>
+            <p data-i18n="plannerCopy">Choose how long you will stay, then tap a time card to choose a place. Your choices stay only in this browser.</p>
+            <div class="planner-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span data-i18n="plannerNote">Tap an empty time card to choose a place, or replace a stop whenever your plans change.</span></div>
+          </div>
+          <div class="planner-card">
+            <fieldset class="stay-length-fieldset"><legend data-i18n="stayLength">How long will you stay?</legend><div class="stay-length-options" id="stay-length-options"></div><label class="custom-days-field" id="custom-days-field" hidden><span data-i18n="customDaysLabel">Number of days</span><input id="custom-days" type="number" min="1" max="14" inputmode="numeric" aria-describedby="custom-days-hint"><small id="custom-days-hint" data-i18n="customDaysHint">Choose 1 to 14 days</small></label></fieldset>
+            <div class="plan-slots" id="plan-slots"></div>
+            <div class="planner-actions"><button class="button button-soft" id="load-example" type="button" data-i18n="loadExample">Load example</button><button class="text-button danger" id="clear-plan" type="button" data-i18n="clearPlan">Clear all</button></div>
+            <p class="planner-status" id="planner-status" role="status" aria-live="polite"></p>
+            <dialog class="place-picker" id="place-picker" aria-labelledby="place-picker-title" aria-describedby="place-picker-copy">
+              <div class="place-picker-shell">
+                <div class="place-picker-toolbar"><div><p class="eyebrow" id="place-picker-target"></p><h3 id="place-picker-title" data-i18n="placePickerTitle">Choose a place</h3></div><button class="place-picker-close" id="place-picker-close" type="button" data-i18n="closePicker">Close</button></div>
+                <p class="place-picker-copy" id="place-picker-copy" data-i18n="placePickerCopy">Choose one place for this time in your itinerary.</p>
+                <div class="place-picker-list" id="place-picker-list"></div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section section shell" id="map" aria-labelledby="map-title">
+        <div class="map-heading"><div><p class="eyebrow" data-i18n="mapEyebrow">Find your way</p><h2 id="map-title" tabindex="-1" data-i18n="mapTitle">A wider Aseer view.</h2></div><p data-i18n="mapCopy">This illustrated overview helps place the region in context. Open a Maps search when you are ready to navigate.</p></div>
+        <div class="map-layout"><div class="map-visual"><img src="assets/aseer-alqatt-map.svg" data-i18n-alt="mapImageAlt" alt="Original Aseer heritage orientation illustration with mountain silhouettes and geometric motifs"><div class="map-place-overlay" id="map-place-overlay" data-i18n-aria-label="mapFeaturedPlaces" aria-label="Featured places in this illustration"></div><span data-i18n="mapDisclaimer">Illustrative only — not for navigation</span></div><div class="location-list" id="location-list"></div></div>
+      </section>
+
+      <section class="future-section section" aria-labelledby="future-title">
+        <div class="shell future-layout">
+          <div class="future-copy">
+            <p class="eyebrow" data-i18n="futureKicker">Aseer, looking forward</p>
+            <h2 id="future-title"><span lang="ar" dir="rtl">القادم أجمل</span><span aria-hidden="true"> / </span><span data-i18n="futureTitleEnglish">The Future Is Coming</span></h2>
+            <p data-i18n="futureCopy">A future rooted in mountain memory, made brighter by imagination, care and the next generation of Aseer makers.</p>
+            <a class="button button-soft" href="#browse" data-i18n="futureAction">Explore Aseer again</a>
+          </div>
+          <img class="future-art" src="assets/aseer-future.svg" data-i18n-alt="futureImageAlt" alt="Original illustration of Aseer mountains with luminous heritage-inspired details">
+        </div>
+      </section>
+    </div>
+
+    <section class="category-detail" id="category-detail" hidden aria-labelledby="active-category-title">
+      <div class="shell category-detail-shell">
+        <header class="category-detail-header">
+          <a class="back-link" id="category-back" href="#browse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"/></svg><span data-i18n="backToCategories">All categories</span></a>
+          <div class="detail-category-nav" id="detail-category-nav" data-i18n-aria-label="categoryNavigation" aria-label="Category navigation"></div>
+          <div class="category-context" id="category-context"></div>
+        </header>
+        <div class="category-tools">
+          <label class="search-field" for="category-search"><span class="sr-only" data-i18n="searchLabel">Search this category</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg><input id="category-search" type="search" autocomplete="off" placeholder="Search this category" data-i18n-placeholder="searchPlaceholder"></label>
+          <label class="month-field" for="month-picker"><span data-i18n="monthLabel">Outdoor guidance for</span><input id="month-picker" type="month"></label>
+          <button class="text-button reset-button" id="reset-filters" type="button" data-i18n="reset">Clear filters</button>
+        </div>
+        <div class="status-legend" data-i18n-aria-label="statusLegendLabel" aria-label="Listing status legend" id="status-legend"></div>
+        <p class="results-status" id="results-status" role="status" aria-live="polite"></p>
+        <div class="place-grid" id="place-grid"></div>
+        <div class="empty-state hidden" id="empty-state">
+          <div class="empty-art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M5 48 23 22l11 15 8-10 17 21M12 51h40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+          <h3 data-i18n="emptyTitle">No matching places yet.</h3><p data-i18n="emptyCopy">Try another phrase or clear your filters to see this category.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="media-lightbox" id="media-lightbox" aria-labelledby="lightbox-title">
+    <div class="media-lightbox-shell">
+      <div class="media-lightbox-toolbar">
+        <p class="media-lightbox-position" id="lightbox-position" aria-live="polite"></p>
+        <button class="media-lightbox-close" id="lightbox-close" type="button" aria-label="Close image viewer">Close</button>
+      </div>
+      <div class="media-lightbox-stage">
+        <button class="media-lightbox-nav media-lightbox-previous" id="lightbox-previous" type="button" aria-label="Previous image">Previous</button>
+        <img id="lightbox-image" alt="">
+        <button class="media-lightbox-nav media-lightbox-next" id="lightbox-next" type="button" aria-label="Next image">Next</button>
+      </div>
+      <p class="media-lightbox-caption" id="lightbox-title"></p>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><div><a class="brand footer-brand" href="#home" data-i18n-aria-label="brandHome" aria-label="Breathe Abha home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M3 24 11 12l5 6 5-9 8 15M7 25h19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3"/></svg></span><span id="footer-brand-name">Breathe <em>Abha</em></span></a><p data-i18n="footerCopy">A local-first guide for unhurried days in Abha and Aseer.</p></div><div class="footer-end"><p class="footer-note" data-i18n="footerNote">Breathe deep. Choose a path.<br>© 2026 Breathe Abha</p><p class="footer-credits"><span lang="ar" dir="rtl">إبداع محمد سرحان</span><span aria-hidden="true"> · </span><span lang="en" dir="ltr">Created by Mohammed Sarhan</span></p></div></div>
+  </footer>
+
+  <script src="sample-data/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

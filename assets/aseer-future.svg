@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Original vision of Aseer's future</title>
+  <desc id="desc">Aseer mountains, heritage geometry, Jacaranda branches and subtle luminous pathways expressing heritage and innovation.</desc>
+  <defs>
+    <linearGradient id="dusk" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#122d2a"/><stop offset=".48" stop-color="#345c5b"/><stop offset="1" stop-color="#80618e"/></linearGradient>
+    <radialGradient id="halo" cx="50%" cy="34%" r="40%"><stop stop-color="#f2d58b" stop-opacity=".92"/><stop offset=".42" stop-color="#c28bcb" stop-opacity=".26"/><stop offset="1" stop-color="#c28bcb" stop-opacity="0"/></radialGradient>
+    <pattern id="motif" width="96" height="96" patternUnits="userSpaceOnUse"><path d="M0 48 24 24l24 24 24-24 24 24M24 96V72m48 24V72" fill="none" stroke="#edc56a" stroke-width="4" opacity=".4"/></pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dusk)"/>
+  <rect width="1600" height="900" fill="url(#halo)"/>
+  <rect width="1600" height="900" fill="url(#motif)" opacity=".35"/>
+  <ellipse cx="850" cy="324" rx="258" ry="138" fill="none" stroke="#d9c0e0" stroke-width="4" opacity=".58"/>
+  <ellipse cx="850" cy="324" rx="196" ry="104" fill="none" stroke="#edc56a" stroke-width="3" opacity=".72"/>
+  <path d="M0 660 221 429l162 138 179-233 172 189 162-130 154 163 161-230 291 290v284H0Z" fill="#47786e" opacity=".8"/>
+  <path d="M0 739 165 564l155 118 195-203 186 153 170-142 174 159 158-197 297 287v161H0Z" fill="#173d35"/>
+  <path d="M0 808 212 653l121 82 168-140 164 120 181-151 160 139 152-94 242 199v92H0Z" fill="#09241f"/>
+  <g fill="none" stroke="#8de0d0" stroke-width="4" opacity=".75"><path d="M259 698c161-44 242-134 402-95s246 8 410-80 287-59 410-12"/><path d="M320 744c151-13 258-87 398-54s260-3 372-59 239-35 338 9"/></g>
+  <g fill="#edc56a"><circle cx="345" cy="675" r="8"/><circle cx="698" cy="628" r="9"/><circle cx="1026" cy="556" r="8"/><circle cx="1314" cy="568" r="8"/></g>
+  <g fill="none" stroke="#e7b5ea" stroke-width="10" stroke-linecap="round" opacity=".88"><path d="M85 140c113 20 203 88 267 187M0 237c130-2 253 57 319 174M1512 0c-11 119-70 215-168 287M1600 92c-114 21-206 92-263 197"/></g>
+  <g fill="#eab8eb"><circle cx="193" cy="230" r="16"/><circle cx="266" cy="295" r="11"/><circle cx="109" cy="197" r="10"/><circle cx="1396" cy="265" r="14"/><circle cx="1468" cy="191" r="11"/><circle cx="1323" cy="340" r="10"/></g>
+  <path d="M0 0h1600v900H0z" fill="none" stroke="#e8c16e" stroke-width="14" opacity=".42"/>
+</svg>

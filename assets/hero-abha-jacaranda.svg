@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated Abha hills framed by Jacaranda trees</title>
+  <desc id="desc">Original decorative illustration of Aseer hills, an Abha streetscape and flowering Jacaranda trees.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#815c97"/>
+      <stop offset=".46" stop-color="#c589a1"/>
+      <stop offset="1" stop-color="#e8bd92"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#577d6c"/>
+      <stop offset="1" stop-color="#1c4b42"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <g opacity=".42" filter="url(#blur)">
+    <circle cx="1240" cy="175" r="116" fill="#f5d7a3"/>
+    <ellipse cx="1040" cy="345" rx="360" ry="44" fill="#f5e8da"/>
+    <ellipse cx="430" cy="430" rx="360" ry="54" fill="#f1d9d4"/>
+  </g>
+  <path d="M0 545 206 405l148 82 190-176 151 139 174-120 203 149 178-192L1600 458v442H0Z" fill="#729987" opacity=".9"/>
+  <path d="m0 615 186-109 206 140 168-104 122 74 202-142 140 95 207-114 187 130v305H0Z" fill="url(#hill)"/>
+  <path d="M310 700h735l-62-145H368Z" fill="#d8b18b" opacity=".9"/>
+  <g fill="#f7e5c9" opacity=".92">
+    <path d="M470 658h81v-99h-81Zm95 0h77V515h-77Zm91 0h86V540h-86Zm100 0h83V492h-83Zm97 0h70V532h-70Z"/>
+  </g>
+  <g fill="#284f45" opacity=".75"><path d="M483 625h25v33h-25Zm99-62h23v37h-23Zm105 48h26v47h-26Zm99-83h25v46h-25Zm91 61h22v38h-22Z"/></g>
+  <g stroke="#513b47" stroke-linecap="round" fill="none">
+    <path d="M130 900c25-207 55-346 147-532" stroke-width="25"/>
+    <path d="M155 746c-41-112-81-168-135-211m174 76c102-110 169-164 244-179m-177 120c10-107-9-182-40-243" stroke-width="12"/>
+    <path d="M1455 900c-18-186-57-342-153-542" stroke-width="27"/>
+    <path d="M1424 745c-72-105-132-159-207-182m139 52c39-119 91-180 170-229m-151 132c-16-102-2-178 28-235" stroke-width="12"/>
+  </g>
+  <g fill="#9c68a9">
+    <circle cx="94" cy="498" r="42"/><circle cx="166" cy="463" r="55"/><circle cx="234" cy="424" r="48"/><circle cx="296" cy="402" r="38"/><circle cx="253" cy="355" r="46"/><circle cx="355" cy="429" r="45"/><circle cx="76" cy="555" r="34"/>
+    <circle cx="1488" cy="490" r="47"/><circle cx="1407" cy="451" r="54"/><circle cx="1340" cy="410" r="42"/><circle cx="1282" cy="390" r="40"/><circle cx="1352" cy="343" r="43"/><circle cx="1225" cy="429" r="44"/><circle cx="1518" cy="547" r="35"/>
+  </g>
+  <g fill="#d4a4d8" opacity=".78"><circle cx="187" cy="429" r="16"/><circle cx="299" cy="442" r="13"/><circle cx="1293" cy="446" r="16"/><circle cx="1408" cy="421" r="14"/></g>
+  <path d="M0 790c247-80 391-61 572-12 204 56 410 17 605-45 162-51 289-37 423 14v153H0Z" fill="#143e39" opacity=".58"/>
+</svg>

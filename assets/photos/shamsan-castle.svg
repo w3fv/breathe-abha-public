@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Original illustration of Shamsan Castle above Abha</title>
+  <desc id="desc">A warm stone hilltop castle against Aseer mountain silhouettes and a soft evening sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a719d"/>
+      <stop offset=".5" stop-color="#e5b985"/>
+      <stop offset="1" stop-color="#f0dfbd"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6c8d71"/>
+      <stop offset="1" stop-color="#23493e"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#d6b47f"/>
+      <stop offset="1" stop-color="#936a45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="910" cy="155" r="68" fill="#fff2c2" opacity=".86"/>
+  <path d="M0 480 175 318l138 118 156-188 165 178 146-125 172 141 158-87v445H0Z" fill="#73977a" opacity=".72"/>
+  <path d="M0 550 176 390l121 105 178-191 184 165 150-127 163 147 158-96v407H0Z" fill="url(#hill)"/>
+  <path d="M0 673c168-87 285-44 393-83 110-40 194-156 332-120 144 38 235 111 475 58v272H0Z" fill="#173d35"/>
+  <path d="M323 620 525 379l150 32 214 213Z" fill="#254d42"/>
+  <path d="M432 553h326v98H432Z" fill="url(#stone)"/>
+  <path d="M467 468h256v94H467Z" fill="url(#stone)"/>
+  <path d="M496 410h198v70H496Z" fill="#c69b6d"/>
+  <path d="M512 381h49v48h-49zm117 0h49v48h-49z" fill="#b08358"/>
+  <path d="M451 528h38v42h-38zm67 0h38v42h-38zm106 0h38v42h-38zm67 0h38v42h-38z" fill="#5b4937"/>
+  <path d="M500 460h38v44h-38zm153 0h38v44h-38z" fill="#5b4937"/>
+  <path d="M572 522h48v129h-48z" fill="#4d3d30"/>
+  <path d="M198 695c38-91 74-137 106-138 18 42 20 85 7 138m628 0c30-89 63-133 95-134 18 45 20 89 7 134" fill="none" stroke="#315f51" stroke-linecap="round" stroke-width="24"/>
+  <g fill="#80518c" opacity=".78">
+    <circle cx="174" cy="593" r="18"/><circle cx="217" cy="555" r="21"/><circle cx="260" cy="583" r="18"/><circle cx="954" cy="594" r="19"/><circle cx="998" cy="560" r="22"/><circle cx="1043" cy="586" r="17"/>
+  </g>
+  <path d="M0 737c179-47 326 32 497-6 167-37 332 10 703-47v116H0Z" fill="#0d2924" opacity=".86"/>
+</svg>
